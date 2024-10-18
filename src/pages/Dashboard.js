@@ -83,8 +83,9 @@ export default function Dashboard() {
                   <img
                     alt="Your Company"
                     src="https://www.jagranimages.com/images/jagran-icon.svg"
-                    className="h-8 w-auto"
+                    className="h-12 w-auto"
                   />
+                  <span className='text-xl font-black uppercase leading-6 text-gray-900 pl-3 pt-3'>Video CMS</span>
                 </div>
                 <nav className="flex flex-1 flex-col">
                   <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -144,6 +145,7 @@ export default function Dashboard() {
                 src="https://www.jagranimages.com/images/jagran-icon.svg"
                 className="h-16 w-auto"
               />
+              <span className='text-2xl font-black uppercase leading-6 text-gray-900 pl-3 pt-3'>Video CMS</span>
             </div>
             <nav className="flex flex-1 flex-col">
               <ul role="list" className="flex flex-1 flex-col gap-y-7">
