@@ -2,6 +2,7 @@ import { DocumentArrowDownIcon, VideoCameraIcon } from '@heroicons/react/24/outl
 import React from 'react'
 import CmsTextInput from '../base/TextInput'
 import CmsButton from '../base/Button'
+import CmsText from '../base/Text'
 
 const YoutubeEmbed = () => {
     const rightIcon = () => {
@@ -12,8 +13,14 @@ const YoutubeEmbed = () => {
     return (
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-12 md:grid-cols-3">
             <div>
-                <h2 className="text-base font-semibold leading-7 text-gray-900">Youtube Embed</h2>
-                <p className="mt-1 text-sm leading-6 text-gray-600">Paste your YouTube Embed, and we'll do the rest.</p>
+                <div>
+                    <CmsText text={"Youtube Embed"} preset="semiBold" />
+                </div>
+                <div>
+                    <CmsText text={"Paste your YouTube Embed, and we'll do the rest."} className={"text-gray-600"} preset='thin' weight={"regular"} size={"sm"} />
+                </div>
+
+                {/* <p className="mt-1 text-sm leading-6 text-gray-600">Paste your YouTube Embed, and we'll do the rest.</p> */}
             </div>
             <div className="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 md:col-span-2">
                 <div className="col-span-full">
