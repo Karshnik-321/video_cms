@@ -11,12 +11,13 @@ const CmsTextInput = ({
     inputType = 'text',
     rightAccessoryStyle,
     leftAccessoryStyle,
+    labelText,
     ...inputProps
 }) => {
     const [isFocused, setIsFocused] = useState(false);
 
 
-    const textStyle = textInputStyle ?? "flex-1 outline-none py-0.4 pl-2 text-base";
+    const textStyle = textInputStyle ?? "flex-1 outline-none pl-2 text-base";
 
 
     const borderColor = isFocused ? 'border-2 block w-full border-red-500 shadow-sm' : 'border-2 block w-full border border-gray-300 shadow-sm';
@@ -45,8 +46,12 @@ const CmsTextInput = ({
     };
 
     return (
+        <div className="col-span-full">
+            <label htmlFor="embed-code" className="block text-sm font-medium leading-6 text-gray-900 mb-2">
+                       {labelText}
+            </label>
         <div
-            className={`flex items-center ${borderColor} rounded-md p-1 ${containerStyle}`}
+            className={`flex items-center ${borderColor} rounded-md ${containerStyle}`}
             style={style}
         >
             {leftIcon && (
@@ -55,6 +60,7 @@ const CmsTextInput = ({
                 </div>
             )}
             <input
+            id={labelText}
                 type={inputType}
                 className={textStyle}
                 onFocus={handleFocus}
@@ -66,6 +72,7 @@ const CmsTextInput = ({
                     {rightIcon}
                 </div>
             )}
+        </div>
         </div>
     );
 };

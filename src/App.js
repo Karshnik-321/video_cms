@@ -20,6 +20,7 @@ import Header from './components/Header'
 import YoutubeEmbed from './components/YoutubeEmbed'
 import VideoInformationSection from './components/VideoInformationSection'
 import DialogBox from './components/DialogBox'
+import CmsTextInput from './base/TextInput'
 
 
 
