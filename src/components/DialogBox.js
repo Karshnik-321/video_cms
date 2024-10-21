@@ -3,6 +3,7 @@ import { Dialog, DialogBackdrop, DialogPanel, TransitionChild } from '@headlessu
 import { Cog6ToothIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import React from 'react'
 import { dashboardRoutes } from '../routes/dashboardRoutes'
+import CmsButton from '../base/Button'
 
 const DialogBox = ({ sidebarOpen, setSidebarOpen }) => {
     function classNames(...classes) {
@@ -127,11 +128,15 @@ const DialogBox = ({ sidebarOpen, setSidebarOpen }) => {
                                     href="#"
                                     className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-red-600"
                                 >
-                                    <Cog6ToothIcon
+                                    {/* <Cog6ToothIcon
                                         aria-hidden="true"
                                         className="h-6 w-6 shrink-0 text-gray-400 group-hover:text-red-600"
                                     />
-                                    Settings
+                                    Settings */}
+                                     <CmsButton icon={<Cog6ToothIcon
+                                                aria-hidden="true"
+                                                className="h-6 w-6 shrink-0 text-gray-400 group-hover:text-red-600"
+                                            />} buttonTypeStyle={"secondary"} buttonText={"Settings"}/>
                                 </a>
                             </li>
                         </ul>
