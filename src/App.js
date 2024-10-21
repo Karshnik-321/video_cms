@@ -14,27 +14,7 @@
 
 import { useState } from 'react'
 import {
-  Dialog,
-  DialogBackdrop,
-  DialogPanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  TransitionChild,
-} from '@headlessui/react'
-import {
-  Bars3Icon,
-  Cog6ToothIcon,
-  XMarkIcon,
-  HomeIcon,
-  ListBulletIcon,
-  VideoCameraIcon,
-  DocumentArrowDownIcon
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import CmsText from './base/Text'
-import CmsTextInput from './base/TextInput'
+  Bars3Icon} from '@heroicons/react/24/outline'
 import CmsButton from './base/Button'
 import Header from './components/Header'
 import YoutubeEmbed from './components/YoutubeEmbed'
@@ -49,11 +29,9 @@ export default function Dashboard() {
 
   return (
     <>
-      {/* Sidebar Dialog for Mobile */}
       <div>
        
         <DialogBox setSidebarOpen={setSidebarOpen} sidebarOpen={sidebarOpen}/>
-        {/* Main Content Area */}
         <div className="lg:pl-72">
           <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
             <button type="button" onClick={() => setSidebarOpen(true)} className="-m-2.5 p-2.5 text-gray-700 lg:hidden">
