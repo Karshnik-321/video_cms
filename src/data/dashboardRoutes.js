@@ -5,5 +5,5 @@ import {
 
 export const dashboardRoutes = [
     { name: 'Dashboard', href: '/dashboard', icon: HomeIcon, current: true },
-    { name: 'Video List', href: '/videos', icon: ListBulletIcon, current: false }
+    { name: 'Video List', href: '/videolist', icon: ListBulletIcon, current: false }
 ]
