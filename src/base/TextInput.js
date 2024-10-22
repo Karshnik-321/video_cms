@@ -17,7 +17,7 @@ const CmsTextInput = ({
     const [isFocused, setIsFocused] = useState(false);
 
 
-    const textStyle = textInputStyle ?? "flex-1 outline-none pl-2 text-base";
+    const textStyle = textInputStyle ?? "flex-1 round-sm outline-none pl-2 text-base py-1.5 pl-4";
 
 
     const borderColor = isFocused ? 'border-2 block w-full border-red-500 shadow-sm' : 'border-2 block w-full border border-gray-300 shadow-sm';
@@ -45,11 +45,22 @@ const CmsTextInput = ({
         }
     };
 
+    const convertToUrlFormat = (str) => {
+        return str.toLowerCase().replace(/\s+/g, '-');
+      }
+
     return (
-        <div className="col-span-full">
-            <label htmlFor="embed-code" className="block text-sm font-medium leading-6 text-gray-900 mb-2">
+        <div className="col-span-full rounded-sm">
+            {
+                labelText ? (
+                    <>
+                    <label htmlFor={convertToUrlFormat(labelText)} className="block text-sm font-medium leading-6 text-gray-900 mb-2">
                        {labelText}
-            </label>
+                    </label>
+                    </>
+                ) : null
+            }
+            
         <div
             className={`flex items-center ${borderColor} rounded-md ${containerStyle}`}
             style={style}
@@ -60,7 +71,7 @@ const CmsTextInput = ({
                 </div>
             )}
             <input
-            id={labelText}
+            id={convertToUrlFormat(labelText)}
                 type={inputType}
                 className={textStyle}
                 onFocus={handleFocus}
