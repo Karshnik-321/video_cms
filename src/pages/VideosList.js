@@ -40,6 +40,7 @@ import {
   ListBulletIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, ExclamationTriangleIcon, MagnifyingGlassIcon, PhotoIcon, UserCircleIcon } from '@heroicons/react/20/solid'
+import Header from '../components/Header/Header'
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: HomeIcon, current: false },
@@ -249,7 +250,7 @@ export default function VideosList() {
                 {/* <div aria-hidden="true" className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-200" /> */}
 
                 {/* Profile dropdown */}
-                <Menu as="div" className="relative">
+                {/* <Menu as="div" className="relative">
                   <MenuButton className="-m-1.5 flex items-center p-1.5">
                     <span className="sr-only">Open user menu</span>
                     <img
@@ -279,7 +280,8 @@ export default function VideosList() {
                       </MenuItem>
                     ))}
                   </MenuItems>
-                </Menu>
+                </Menu> */}
+                <Header />
               </div>
             </div>
           </div>

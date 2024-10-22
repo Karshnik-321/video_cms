@@ -31,6 +31,7 @@ export const AuthProvider = ({ children }) => {
     };
     const isAuthenticated = token;
     const loading = isLoading
+    
     return (
       <AuthContext.Provider value={{ isAuthenticated, loading, login, logout }}>
         {children}

@@ -1,6 +1,6 @@
 import React from 'react'
-import CmsText from '../base/Text'
-import CmsTextInput from '../base/TextInput'
+import CmsText from '../../base/Text'
+import CmsTextInput from '../../base/TextInput'
 
 const VideoInformationSection = () => {
     return (

@@ -1,13 +1,13 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { ChevronDownIcon, HomeIcon, ListBulletIcon } from '@heroicons/react/24/outline'
+import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import React from 'react'
-import { menuRoutes } from '../routes/route'
+
+const menuRoutes = [
+  { name: 'Your profile', href: '#' },
+  { name: 'Sign out', href: '#' },
+]
 
 const Header = () => {
-    const navigation = [
-        { name: 'Dashboard', href: '/dashboard', icon: HomeIcon, current: true },
-        { name: 'Video List', href: '/videos', icon: ListBulletIcon, current: false }
-      ]
 
   return (
       <Menu right as="div" className="">

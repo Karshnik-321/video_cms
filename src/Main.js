@@ -16,10 +16,10 @@ import { useState } from 'react'
 import {
   Bars3Icon} from '@heroicons/react/24/outline'
 import CmsButton from './base/Button'
-import Header from './components/Header'
-import YoutubeEmbed from './components/YoutubeEmbed'
-import VideoInformationSection from './components/VideoInformationSection'
-import DialogBox from './components/DialogBox'
+import Header from './components/Header/Header'
+import YoutubeEmbed from './components/Dashboard/YoutubeEmbed'
+import VideoInformationSection from './components/Dashboard/VideoInformationSection'
+import DialogBox from './components/Dashboard/DialogBox'
 import CmsTextInput from './base/TextInput'
 
 

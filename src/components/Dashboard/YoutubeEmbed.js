@@ -1,8 +1,8 @@
 import { DocumentArrowDownIcon, VideoCameraIcon } from '@heroicons/react/24/outline'
 import React from 'react'
-import CmsTextInput from '../base/TextInput'
-import CmsButton from '../base/Button'
-import CmsText from '../base/Text'
+import CmsTextInput from '../../base/TextInput'
+import CmsButton from '../../base/Button'
+import CmsText from '../../base/Text'
 
 const YoutubeEmbed = () => {
     const rightIcon = () => {
