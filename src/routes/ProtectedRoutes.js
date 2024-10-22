@@ -1,6 +1,5 @@
 import { Outlet, Navigate } from "react-router-dom";
 import { useAuth } from "../context/AuthenticationContext";
-import { getCookie } from "../utils/cookies";
 
 const PrivateRoutes = () => {
     const { isAuthenticated , loading} = useAuth();

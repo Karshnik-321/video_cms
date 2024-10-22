@@ -13,7 +13,6 @@
 'use client'
 
 import { AuthProvider } from './context/AuthenticationContext';
-import Main from './Main'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login"
 import Dashboard from './pages/Dashboard';
@@ -28,7 +27,7 @@ export default function App() {
       <AuthProvider>
         <Routes>
           {/* <Route  element={<PrivateRoutes />}> */}
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/videolist' element={<VideosList />} />
           {/* </Route> */}

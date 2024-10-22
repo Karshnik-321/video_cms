@@ -5,7 +5,7 @@ import React from 'react'
 import { dashboardRoutes } from '../../data/dashboardRoutes'
 import CmsButton from '../../base/Button'
 
-const DialogBox = ({ sidebarOpen, setSidebarOpen }) => {
+const DrawerBar  = ({ sidebarOpen, setSidebarOpen }) => {
     function classNames(...classes) {
         return classes.filter(Boolean).join(' ')
     }
@@ -136,4 +136,4 @@ const DialogBox = ({ sidebarOpen, setSidebarOpen }) => {
     )
 }
 
-export default DialogBox
+export default DrawerBar
