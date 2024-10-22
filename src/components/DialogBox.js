@@ -2,7 +2,7 @@
 import { Dialog, DialogBackdrop, DialogPanel, TransitionChild } from '@headlessui/react'
 import { Cog6ToothIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import React from 'react'
-import { dashboardRoutes } from '../routes/dashboardRoutes'
+import { dashboardRoutes } from '../data/dashboardRoutes'
 import CmsButton from '../base/Button'
 
 const DialogBox = ({ sidebarOpen, setSidebarOpen }) => {
