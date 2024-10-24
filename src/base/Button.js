@@ -21,7 +21,6 @@ const CmsButton = ({
     const combinedButtonStyle =  buttonTypeStyle ? styleType[buttonTypeStyle] : classStyle ;
 
     return (
-    <div >
       <button type={buttonType} {...buttonProps} className={combinedButtonStyle}>
         {
             icon ? (
@@ -32,7 +31,6 @@ const CmsButton = ({
         }
         {content}
       </button>
-    </div>
   )
 }
 

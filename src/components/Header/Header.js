@@ -4,7 +4,7 @@ import React from 'react'
 
 const menuRoutes = [
   { name: 'Your profile', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Sign out', href: '/login' },
 ]
 
 const Header = () => {

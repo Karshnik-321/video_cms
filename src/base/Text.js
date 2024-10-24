@@ -35,6 +35,7 @@ export default CmsText;
 
 const sizeStyles = {
     xxl: 'text-4xl leading-tight',
+    semiBold: 'text-2xl leading-tight',
     bold: 'text-3xl leading-tight',
     lg: 'text-xl leading-6',
     md: 'text-base leading-3',

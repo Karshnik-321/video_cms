@@ -15,12 +15,13 @@ const CmsTextInput = ({
     ...inputProps
 }) => {
     const [isFocused, setIsFocused] = useState(false);
+console.log("...inputProps", inputProps);
 
 
-    const textStyle = textInputStyle ?? "flex-1 round-sm outline-none pl-2 text-base py-1.5 pl-4";
+    const textStyle = textInputStyle ?? "flex-1 outline-none border-1 overflow-hidden rounded pl-2 text-base py-1.5 pl-4";
 
 
-    const borderColor = isFocused ? 'border-2 block w-full border-red-500 shadow-sm' : 'border-2 block w-full border border-gray-300 shadow-sm';
+    const borderColor = isFocused ? 'border-2 block w-full border-red-500 shadow-sm' : 'border-1 block w-full border border-gray-300 shadow-sm';
 
     const handleFocus = () => {
         setIsFocused(true);
@@ -71,7 +72,8 @@ const CmsTextInput = ({
                 </div>
             )}
             <input
-            id={convertToUrlFormat(labelText)}
+                id={convertToUrlFormat(labelText)}
+                name={labelText}
                 type={inputType}
                 className={textStyle}
                 onFocus={handleFocus}
